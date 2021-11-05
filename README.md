@@ -30,7 +30,7 @@ app.MapGet("/object", () =>
 );
 app.MapGet("/matching/{id}", (int id) => JsonSerializer.Serialize(id));
 var client = new HttpClient();
-async Task CallThatShit()
+async Task RunIt()
 {
   await Task.Run(() => Thread.Sleep(1000));
   if (client == null || client == default) return;
@@ -41,7 +41,7 @@ async Task CallThatShit()
   Console.WriteLine($"{root}");
   Console.WriteLine($"{match}");
 }
-var clientOperations = CallThatShit();
+var clientOperations = RunIt();
 app.Run("http://localhost:3000");
 await clientOperations;
 ```
