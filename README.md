@@ -2,8 +2,9 @@
 
 > *visual studio code (with PATH integration) and dotnet version 6 required.*
 
-[.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
-[Visual Studio Code](https://code.visualstudio.com/download)
+- [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+
 
 ## Project Setup in Shell
 
@@ -52,7 +53,6 @@ await clientOperations;
 
 ## Run the thing...
 
-> works in powershell, zsh, or bash... *you know what? I'm just going to say it this time, it runs where ever you damn well please.*
 ```
 dotnet run
 ```
