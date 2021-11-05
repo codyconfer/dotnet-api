@@ -1,6 +1,9 @@
 # Minimal Api Nonsense
 
-> *visual studio code (with PATH integration), dotnet version 6, and dotnet cli required*
+> *visual studio code (with PATH integration) and dotnet version 6 required.*
+
+[.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+[Visual Studio Code](https://code.visualstudio.com/download)
 
 ## Project Setup in Shell
 
@@ -20,7 +23,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-app.MapGet("/", () => "Hello! World");
+app.MapGet("/", () => "Hello World!");
 app.MapGet("/object", () =>
   JsonSerializer.Serialize(new
   {
